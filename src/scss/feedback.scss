@@ -152,8 +152,8 @@
 	  &:after {
 	    content: '';
 	    position: absolute;
-	    width: 5px;
-	    height: 5px;
+	    width: 0px;
+	    height: 0px;
 	    border: solid #a1812e;
 	    border-width: 0 2px 2px 0;
 	    display: inline-block;
@@ -164,6 +164,9 @@
 	    left: 0;
 	    margin: auto;
 	    z-index: 100;
+	    @media screen and(max-width: 768px) {
+	    	border-width: 0 1px 1px 0;
+	    }
 	  }
 
 	  @media screen and(max-width: 768px) {

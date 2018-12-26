@@ -361,13 +361,13 @@ section {
   &:after {
     content: '';
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 0px;
+    height: 0px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
-    top: 5px;
+    top: 3px;
     right: 0;
     bottom: 0;
     left: 0;
