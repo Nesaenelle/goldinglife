@@ -71,12 +71,12 @@
         transition: 0.3s;
 
         &:hover {
-          svg {
+          svg, img{
             background: #a1812e52;
           }
         }
 
-        svg {
+        svg, img{
           transition: 0.3s;
           padding: 7px;
           width: 29px;
