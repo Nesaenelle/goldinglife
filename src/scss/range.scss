@@ -1,0 +1,45 @@
+#range-section {
+
+	  overflow: hidden;
+	  padding: 105px 0 109px 0;
+	  background: url(./../assets/range-bg.png) no-repeat;
+	  @media screen and(max-width: 1280px) {
+	    padding: 60px 20px;
+	  }
+	
+
+	.title {
+	  @media screen and(max-width: 375px) {
+	    br {
+	      display: none;
+	    }
+	    padding: 0 10px;
+	  }
+	}
+
+	.subtitle {
+	  text-align: center;
+	  font-size: 16px;
+	  font-family: Montserrat;
+	  color: #949390;
+	  margin-top: 15px;
+	  @media screen and(max-width: 600px) {
+	    padding: 0 10px;
+	  }
+
+	  @media screen and(max-width: 375px) {
+	    padding: 0;
+	  }
+	}
+
+	.curve {
+	  display: block;
+	  margin: 30px auto;
+	  width: 167px;
+	  @media screen and(max-width: 480px) {
+	    margin: 25px auto;
+	    width: 120px;
+	  }
+	}
+
+}
