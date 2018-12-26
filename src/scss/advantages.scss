@@ -227,12 +227,17 @@
 
 	      @media screen and(max-width: 480px) {
 	        text-align: center;
-	        padding: 0;
+	        // padding: 0;
+	        padding: 0 5px;
 	        letter-spacing: 0.5px;
 	      }
 	      @media screen and(max-width: 480px) {
 	        letter-spacing: initial;
 	      }
+	      @media screen and(max-width: 480px) {
+	      	padding: 0 4px;
+		  }
+	     
 	    }
 	  }
 	}
