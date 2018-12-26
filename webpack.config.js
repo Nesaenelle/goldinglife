@@ -3,12 +3,14 @@ var webpack = require('webpack')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 
 module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: 'dist/',
     filename: 'build.js'
   },
   module: {
@@ -22,6 +24,7 @@ module.exports = {
       {
           test: /\.scss$/,
           use: ExtractTextPlugin.extract({
+            publicPath: './',
             fallback: 'style-loader',
             //resolve-url-loader may be chained before sass-loader if necessary
             use: ['css-loader', 'sass-loader']
@@ -57,7 +60,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin("styles.css", {     allChunks: true}),
+    new HtmlWebpackPlugin({
+      alwaysWriteToDisk: true,
+      filename: '../index.html',
+      template: 'src/index.html'
+    }),
+    new HtmlWebpackHarddiskPlugin({
+        alwaysWriteToDisk: true,
+        filename: 'index.html'
+    })
   ],
   resolve: {
     alias: {
