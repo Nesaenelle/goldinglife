@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1">
   <title>vue2-webpack-simple</title>
 <link href="dist/styles.css" rel="stylesheet"></head>
 
@@ -1122,7 +1123,7 @@
           <li><a  class="" href="#about" @click.prevent="scrollTo($event)">О нас</a></li>
           <li><a  class="" href="#advantages" @click.prevent="scrollTo($event)">Возможности</a></li>
           <li><a  class="" href="#roadmap" @click.prevent="scrollTo($event)">Как начать</a></li>
-          <li><a  class="logo" href="#start" @click.prevent="scrollTo($event)"><img src="/dist/logo.svg" alt=""></a></li>
+          <li><a  class="logo" href="#start" @click.prevent="scrollTo($event)"><img src="/dist/GoldingLife.svg" alt=""></a></li>
           <li><a  class="" href="#feedback" @click.prevent="scrollTo($event)">Отзывы</a></li>
           <li><a  class="" href="#middle-form" @click.prevent="scrollTo($event)">Регистрация</a></li>
           <li><a  class="" href="/site/login#enter">Вход</a></li>
@@ -1230,9 +1231,9 @@
       <section id="top-form">
         <div class="container">
           <h2 class="title animate" v-animate="'slide-left'">Золото всегда было в цене</h2>
-          <div class="subtitle animate" v-animate="'slide-up'">Посмотрите видео, и узнайте, как на нём заработать!</div>
+          <div class="subtitle animate" v-animate="'slide-right'">Посмотрите видео, и узнайте, как на нём заработать!</div>
           <!-- <img src="./../assets/dividerdark.png" class="animate" v-animate="'slide-right'" alt=""> -->
-          <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-right'" alt="">
+          <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-up'" alt="">
           <div class="wrapper">
             <div class="video animate" v-animate="'slide-up'">
               <iframe src="https://www.youtube.com/embed/uaAN7uyQ8l0"></iframe>
@@ -1343,9 +1344,9 @@
         <!-- <div class="container"> -->
         <h2 class="title animate" v-animate="'slide-left'">Ассортимент продукции. <br>
 	      Идеи, воплощенные в золоте</h2>
-        <div class="subtitle animate" v-animate="'slide-up'">Уникальная продукция, которой вы можете воспользоваться уже сегодня</div>
+        <div class="subtitle animate" v-animate="'slide-right'">Уникальная продукция, которой вы можете воспользоваться уже сегодня</div>
 
-        <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-right'" alt="">
+        <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-up'" alt="">
 
         <div class="slider-wrapper animate" v-animate="'slide-up'">
           <div class="range-slider-arrow-prev slider-arrow"></div>
@@ -1408,9 +1409,9 @@
       <section id="stats-section">
         <div class="container">
           <h2 class="title animate" v-animate="'slide-left'">Golding Life в цифрах</h2>
-          <div class="subtitle animate" v-animate="'slide-up'">Простые факты о бизнес-системе</div>
+          <div class="subtitle animate" v-animate="'slide-right'">Простые факты о бизнес-системе</div>
           <!-- <img src="./../assets/dividerdark.png" class="animate" v-animate="'slide-right'" alt=""> -->
-          <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-right'" alt="">
+          <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-up'" alt="">
           <div class="list">
             <app-counter class="animate" v-animate="'slide-up'" :number="100000" title="Продажа товаров под брендом Golding Life"></app-counter>
             <app-counter class="animate" v-animate="'slide-up'" :number="105" title="Страны, в которых работает система"></app-counter>
@@ -1465,7 +1466,7 @@
               на золоте?</h2>
               <div class="subtitle animate" v-animate="'slide-up'">Начните зарабатывать сразу после <br>регистрации в системе - уже сегодня!</div>
               <!-- <img src="~assets/dividebigr.png" v-animate="'slide-up'" alt="" class="animate"> -->
-              <img class="curve animate" src="dist/divider_color.svg" v-animate="'slide-right'" alt="">
+              <img class="curve animate" src="dist/divider_color.svg" v-animate="'slide-left'" alt="">
             </div>
               <div class="list" v-animate="'roadmap-anim'">
                 <div class="list__item">
@@ -1518,9 +1519,9 @@
                 Что говорят участники системы
               </h2>
               <!-- <img src="~assets/dividerdark.png" alt="" v-animate="'slide-right'" class="animate"> -->
-              <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-right'" alt="">
+              <img class="curve animate" src="dist/divider_second.svg" v-animate="'slide-up'" alt="">
               <!-- <app-slider :slides="slides" v-animate="'slide-up'" class="animate"></app-slider> -->
-              <div class="slider_wrapper">
+              <div class="slider_wrapper animate"  v-animate="'slide-up'">
                 <div class="slider-arrow-prev slider-arrow"></div>
                 <div class="slider-arrow-next slider-arrow"></div>
                   <div class="slider-nav">
@@ -1553,7 +1554,7 @@
                       </div>
                       <div class="slide_item">
                           <div class="slide_name">Анжела, 28 лет</div>
-                          <p class="slide_desc">Я всегда мечтала стать светской львицей и чтобы меня могли отнести к «золотой молодёжи». Теперь — это не проблема для меня. А главное — я добилась успеха сама с программой Golding Life без чьей-то помощи. Теперь меня ждут на всех закрытых вечеринках города, ведь только у меня есть доступ к уникальному золотому шампанскому и конфетам с чистым пищевым золотом.</p>
+                          <p class="slide_desc">Стань частью исторического события, с нашим мобильным приложением Car2Life...завоевав не только Россию но и весь мир. С новым проектом, измениться качество твоей жизни. Превзойди самого себя и создай себе жизнь о котором можно только мечтать. Зарабатывание денег в нашей компании Car2Life- cтанет радостным процессом обретения богатства...средством достижения главных жизненных целей. Используй силу момента для безграничных возможностей и заработка. Поисоединяйся к нашей целустремленной и позитивной компании с массой новых знакомств.</p>
                       </div>
                       <div class="slide_item">
                           <div class="slide_name">Анжела, 28 лет</div>
@@ -1561,7 +1562,7 @@
                       </div>
                       <div class="slide_item">
                           <div class="slide_name">Анжела, 28 лет</div>
-                          <p class="slide_desc">Я всегда мечтала стать светской львицей и чтобы меня могли отнести к «золотой молодёжи». Теперь — это не проблема для меня. А главное — я добилась успеха сама с программой Golding Life без чьей-то помощи. Теперь меня ждут на всех закрытых вечеринках города, ведь только у меня есть доступ к уникальному золотому шампанскому и конфетам с чистым пищевым золотом.</p>
+                          <p class="slide_desc">Стань частью исторического события, с нашим мобильным приложением Car2Life...завоевав не только Россию но и весь мир. С новым проектом, измениться качество твоей жизни. Превзойди самого себя и создай себе жизнь о котором можно только мечтать. Зарабатывание денег в нашей компании Car2Life- cтанет радостным процессом обретения богатства...средством достижения главных жизненных целей. Используй силу момента для безграничных возможностей и заработка. Поисоединяйся к нашей целустремленной и позитивной компании с массой новых знакомств.</p>
                       </div>
                       <div class="slide_item">
                           <div class="slide_name">Анжела, 28 лет</div>
@@ -1569,7 +1570,7 @@
                       </div>
                       <div class="slide_item">
                           <div class="slide_name">Анжела, 28 лет</div>
-                          <p class="slide_desc">Я всегда мечтала стать светской львицей и чтобы меня могли отнести к «золотой молодёжи». Теперь — это не проблема для меня. А главное — я добилась успеха сама с программой Golding Life без чьей-то помощи. Теперь меня ждут на всех закрытых вечеринках города, ведь только у меня есть доступ к уникальному золотому шампанскому и конфетам с чистым пищевым золотом.</p>
+                          <p class="slide_desc">Стань частью исторического события, с нашим мобильным приложением Car2Life...завоевав не только Россию но и весь мир. С новым проектом, измениться качество твоей жизни. Превзойди самого себя и создай себе жизнь о котором можно только мечтать. Зарабатывание денег в нашей компании Car2Life- cтанет радостным процессом обретения богатства...средством достижения главных жизненных целей. Используй силу момента для безграничных возможностей и заработка. Поисоединяйся к нашей целустремленной и позитивной компании с массой новых знакомств.</p>
                       </div>
                       <div class="slide_item">
                           <div class="slide_name">Анжела, 28 лет</div>
